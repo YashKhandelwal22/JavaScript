@@ -16,7 +16,7 @@ console.log(id === anotherId);
 
 const bigNumber = 3456543576654356754n
 
-// Reference (Non primitive)
+// Reference (Non-Primitive)
 
 // Array, Objects, Functions
 
@@ -31,3 +31,27 @@ const myFunction = function(){
 }
 
 console.log(typeof myFunction);
+
+//**************************************Memories****************************
+
+// Stack(Primitive), Heap(Non-Primitive)
+
+let myName = "yashkhandelwal"
+
+let anotherName = myName
+anotherName = "yash"
+
+console.log(myName);
+console.log(anotherName);
+
+let userOne = {
+    email: "user@google.com",
+    upi : "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "yash@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
