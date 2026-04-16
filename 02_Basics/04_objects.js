@@ -50,3 +50,27 @@ console.log(Object.keys(tinderUser)) // it will return the array of all keys [ '
 console.log(Object.values(tinderUser)) // it will return the array of all values [ '123abc', 'Sammy', false ]
 console.log(Object.entries(tinderUser)) // it will the return the key and pair as an array and these arrays will get stored in another array [ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ]
 console.log(tinderUser.hasOwnProperty('isLoggedIn')); // it will return true if the key exists and false if it does not exists
+
+const course = {
+    coursename: "JS in hindi",
+    price: "999",
+    courseInstructor: "Yash"
+}
+
+// course.courseInstructor
+
+const {courseInstructor: instructor} = course 
+// console.log(courseInstructor)
+console.log(instructor)
+
+// {
+//     "name": "hitesh",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
